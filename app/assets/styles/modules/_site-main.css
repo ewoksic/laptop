@@ -1,0 +1,89 @@
+.site-main{
+
+    &__presentation{
+
+        min-height: 80vh;
+        align-items: center;
+        @mixin atLarge {
+            flex-direction: column;
+            
+        }
+    }
+    &__introduction{
+        flex: 1;
+        @mixin atLarge {
+            margin-top: 5vh;
+            text-align: center;
+            
+        }
+    }
+    &__cover{
+        flex: 1;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    &__cta{
+        padding: 3.125rem 0 0 0;
+        @mixin atLarge {
+            padding:0.625rem 0 0 0 ;
+        }
+    }
+    &__cta-select{
+        border: 2px solid #c36cbb;
+        background: transparent;
+        color: #c36cbb;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    &__cta-add{
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+        border: none;
+        background: #c36cbb;
+        margin:1.875rem 0 0 1.875rem ;
+        @mixin atLarge {
+            margin: 0;
+        }
+    }
+    &__cover img{
+       width: 100%;
+        filter: drop-shadow(0 5px 3px black);
+        animation: drop 1.5s ease;
+        
+    }
+    h1{
+        font-size: 2.75rem;
+        font-weight: 500;
+        background: linear-gradient(to right, #494964, #6f6f89);
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        @mixin atLarge {
+            font-size: 1.875rem;
+        }
+    }
+    p{
+        margin-top: 5px;
+        font-size: 1.375rem;
+        color: #585772;
+        @mixin atLarge {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,13 @@
+.laptop-select{
+    position: absolute;
+    right: 20%;
+    width: 15%;
+    justify-content: space-around;
+    @mixin atLarge {
+        bottom: 5%;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%, 5%);
+    }
+} 
+
